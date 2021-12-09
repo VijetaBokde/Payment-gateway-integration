@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sparks Donation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+
+
+</head>
+
+<body>
+
+    <header class="header" style="margin-top: 0px;">
+        <h3 style="margin-right:10 px; margin-top: 20px;"><a href="about.html" class="logo">SPARKS FOUNDATION</a></h3>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="donate.html">DONATE</a></li>
+            <li><a href="contact.html" class="active">CONTACT US</a></li>
+        </ul>
+
+        <section>
+            <div class="pattern">
+              
+                    <div class="listing-hero">
+                        <div class="hero-heading">
+                            <div class="hero-large">Contact Us.</div>
+                            <div class="hero-text"> <i>Got any Questions? Feel free to ask or visit our FAQ page </i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-contact">
+                        <div class="wrap-contact">
+
+                            <form name="contact" class="contact-form validate-form" method="post"
+                                action="contact-form-handler.php">
+
+                                <div class="wrap-input validate-input" data-validate="Please enter your name">
+                                    <input class="input" type="text" name="name" placeholder="Full Name" required>
+                                </div>
+
+                                <div class="wrap-input validate-input" data-validate="Please enter your email">
+                                    <input class="input" type="text" name="email" placeholder="E-mail" required>
+                                </div>
+
+                                <div class="wrap-input validate-input" data-validate="Please enter your message">
+                                    <textarea class="input" type="text" name="message" placeholder="Your Message"
+                                        required></textarea>
+                                </div>
+
+                                <div class="container-contact-form-btn">
+                                    <button type="submit" class="contact-form-btn" onclick="abcd()">
+                                        <span>Send</span>
+                                    </button>
+                                </div>
+
+                        </div>
+                        </form>
+
+                    
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </header>
+
+    <script>function abcd() { alert('Your message has been sended successfully!'); }</script>
+
+</body>
+
+</html>

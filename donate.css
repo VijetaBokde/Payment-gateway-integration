@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Montserrat';
+    overflow:scroll;
+    overflow-x: hidden;
+}
+body h2{
+    color: #fff;
+}
+.active{
+  border-bottom: 2px solid gold;
+ }
+.welcome h3{
+    font-size: 30px;
+    
+}
+.logo h2{
+    margin-top: 25px;
+    margin-left: 60px;
+}
+.welcome{
+	position: absolute;
+	width: 650px;
+	height: 300px;
+    margin-top: 100px;
+    margin-left: 450px;
+	text-align: center;
+}
+.welcome h3{
+    color: #fff;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/bg.jpeg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.logo {
+    float: left;
+    color: white;
+}
+
+/*resposive*/
+
+@media (max-width:600px) {
+
+  .heading h3{
+    text-align: center;
+  }
+
+	.logo {
+		width: 50%;
+    margin-left: 60px;
+		
+  }
+  .pattern{
+    height: 50px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 60px;
+    
+  }
+
+  .pattern .welcome h3{
+    margin-top: -125px;  
+    
+    margin-left: 55px;
+    max-width: fit-content;
+  }
+    .welcome{
+        width: 300px;
+        height: 100px;
+        margin: 30% 0;
+        
+    }
+    
+    
+}
+
+.welcome h3{
+    margin-top: 272px;
+    margin-left: 150px;
+    width: 500px;
+}
+
+a {
+    color: #fff;
+  }
+
+  .pattern {
+    height: 40vh;
+    width: 100vw;
+   
+    background-image: repeating-linear-gradient(
+      32deg, 
+      transparent,
+      transparent 2px,
+      black 5px,
+      black 5px,
+      transparent 4px
+      );
+  /*     background-size: 6px 6px; */
+  }
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    transition: all .5s;
+    color: #555;
+    background-color: gold;
+    color: #555;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }

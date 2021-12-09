@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'Montserrat';
+    
+}
+/*-------navigation bar----*/
+body h2{
+    color: #fff;
+}
+.logo h2{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+header {
+background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./images/pic2.jfif);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+}
+/*------main content--------*/
+.right{
+  display: flex;
+   float: right;
+    align-items: right;
+     width: 600px;
+      height: 600px;
+      margin-right: 60px;
+      margin-top: -150px;
+}
+.welcome{
+	position: absolute;
+	width: 650px;
+	height: 300px;
+  margin: 20% 10%;
+	text-align: left;
+}
+.welcome h3 {
+	text-align: center;
+	color: rgb(250, 246, 246);
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.welcome h3 span {
+	color: #00fecb;
+}
+.welcome a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome a:hover {
+  background-color: #fff;
+  color: black;
+}
+.active{
+ border-bottom: 2px solid gold;
+}
+.pattern {
+    height: 40vh;
+    width: 100vw;
+  }
+/*resposive*/
+
+@media (max-width:600px) {
+
+  .heading h3{
+    
+    text-align: center;
+  }
+
+	.logo {
+		
+		width: 50%;
+    margin-left: 60px;
+      
+		
+	}
+	.welcome{
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome h1 {
+		font-size: 30px;
+  }
+  .right{
+    display: none;
+  }
+}
+body {
+    margin: 0;
+    font-family: Montserrat;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    margin-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+    transition: all .5s;
+    color: #555;
+    background-color: gold;
+    color: #555;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  /*Donate button */
+.donate {
+  font-size: 16px;
+  padding: 16px;
+  margin: 12px;
+  margin-top: 15px;
+  background-color: #BD9334;
+  border: none;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition: 300ms ease;
+}
+
+.donate:hover {
+  transform: translate3d(0, -5px, 0);
+  box-shadow: 0 2rem 5rem gold;
+  transition: 300ms ease;
+}
+
+#donate:focus {
+  outline: none;
+}
+
+/*Donate button end*/
+
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+    
+    
+  }
+  @media (max-width:950px){
+    .right{
+      display: none;
+    }
+  }
+ 
