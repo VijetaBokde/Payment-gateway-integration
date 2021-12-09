@@ -2,7 +2,7 @@
 # The Sparks Foundation
 website link: https://internship.thesparksfoundation.info/ 
 
-Batch: #GRIPSEPTEMBER21
+Batch: #GRIPDECEMBER21
 
 ## Features
 - I have made this donation Website using html, css and Razarpay for the payment. 
@@ -25,7 +25,7 @@ Batch: #GRIPSEPTEMBER21
 
 ## Demo
 Live Demo: 
- https://vijetabokde.github.io/payement-gateway-intigration/
+ https://vijetabokde.github.io/Payment-gateway-integration/
 ## Author
 - Vijeta bokde
 - [LinkedIn](https://www.linkedin.com/in/vijeta-bokde-967b9a18a/)
